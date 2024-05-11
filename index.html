@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>母亲节快乐！</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #message {
+            font-size: 2em;
+            color: #ff6f61;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 2s forwards, colorChange 6s infinite alternate;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes colorChange {
+            0% { color: #ff6f61; }
+            100% { color: #ffb6c1; }
+        }
+    </style>
+</head>
+<body>
+    <div id="message">曾莉莉女士，辛苦了。母亲节快乐！</div>
+</body>
+</html>
